@@ -1,0 +1,17 @@
+ul {
+    list-style-type: none;
+    width: 100%;
+    min-height: 100%;
+    padding: 0 !important;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li:last-child {
+    position: sticky;
+}
