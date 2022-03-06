@@ -1,19 +1,15 @@
 import React, { ChangeEvent, FormEvent, useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import './setupPage.css'
 import { TelepartyClient, SocketEventHandler, MessageList } from 'teleparty-websocket-lib';
 import ChatRoom from './chatRoom';
 
 
 const SetupPage: React.FunctionComponent = () => {
-
-    const defaultImage = <img src='https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png'/>
     const localNickName = window.sessionStorage.getItem('nickName') || ''
     const localRoomID = window.sessionStorage.getItem('roomId') || ''
     const [nickname, setNickName] = useState(localNickName);
     const [typers, setTypers] = useState(false);
     const [chatID, setchatID] = useState(localRoomID);
-    const [userProfile, setuserProfile] = useState(defaultImage);
     const [errorMessage, setError] = useState('');
     const [messages, setMessages] = useState<MessageList>({messages: []} as MessageList);
     const [inRoom, setInRoom] = useState(false)

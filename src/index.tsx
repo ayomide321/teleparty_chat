@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SetupPage from './components/setupPage';
-import ChatRoom from './components/chatRoom';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

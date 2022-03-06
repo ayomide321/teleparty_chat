@@ -3,7 +3,6 @@ import MessageBar from "./messageBar";
 import MessageData from "./messageData";
 import { MessageList, TelepartyClient } from 'teleparty-websocket-lib';
 import './chatRoom.css'
-import { exit } from "process";
 
 type Props = {
     messages?: MessageList
@@ -14,7 +13,7 @@ type Props = {
 }
 
 const ChatRoom: React.FunctionComponent<Props> = ({messages, client, exitChat, typers, roomID}) => {
-    const listRef = useRef<HTMLDivElement>([] as any);
+    const listRef = useRef<HTMLDivElement>({} as HTMLDivElement);
     useEffect(() => {
         listRef.current.scrollTo(0, listRef.current.scrollHeight);
     }, [messages]);

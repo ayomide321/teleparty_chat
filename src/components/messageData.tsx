@@ -1,5 +1,5 @@
 import React from "react";
-import { SessionChatMessage, MessageList } from 'teleparty-websocket-lib';
+import { MessageList } from 'teleparty-websocket-lib';
 import './messageData.css'
 type Props = {
     messages: MessageList

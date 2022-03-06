@@ -1,6 +1,5 @@
 import React from "react";
 import { FormEvent, useState, ChangeEvent } from "react";
-import { useLocation } from "react-router-dom";
 import { SocketMessageTypes, TelepartyClient } from "teleparty-websocket-lib";
 
 
