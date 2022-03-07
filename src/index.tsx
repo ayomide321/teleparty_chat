@@ -10,7 +10,7 @@ ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path="/" element={<SetupPage/>}/>
+        <Route path="/teleparty_chat" element={<SetupPage/>}/>
       </Routes>
     </React.StrictMode>
   </BrowserRouter>,
