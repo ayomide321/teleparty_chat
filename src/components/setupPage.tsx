@@ -34,7 +34,6 @@ const SetupPage: React.FunctionComponent = () => {
 
         onClose: () => { console.log("Socket closed") },
         onMessage: async(message) => {
-            console.log(message.data)
             if(message.data.anyoneTyping){
                 setTypers(message.data.anyoneTyping)
             } else if(message.data.body) {
