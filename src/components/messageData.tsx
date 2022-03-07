@@ -11,7 +11,7 @@ const MessageData: React.FunctionComponent<Props> = ({messages, roomID}) => (
     <>
         <ul className = "messagePage">
             <p style={{textAlign: 'center', fontWeight: 'bolder'}}>Invite your friends to join with this code: {roomID}</p>
-            {messages.messages ? messages.messages.slice(1).map((message, i) => (
+            {messages.messages ? messages.messages.map((message, i) => (
                 <li className="messageData" key={i}>
                 
                 {message.isSystemMessage ? 
